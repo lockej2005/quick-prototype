@@ -1,0 +1,138 @@
+.quick-prototypes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    display: flex;
+    gap: 20px;
+    height: calc(100vh - 200px); /* Adjust this value as needed */
+  }
+  
+  .left-section, .right-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .input-section textarea {
+    background-color: #2a2a2a;
+    border: 1px solid #00b4d8;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 10px;
+    resize: none;
+    margin-bottom: 10px;
+    height: 100px;
+  }
+  
+  .submit-button {
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prelude {
+    background-color: #2a2a2a;
+    border: 1px solid #00b4d8;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 16%;
+    overflow-y: auto;
+  }
+  
+  .prelude pre {
+    margin: 0;
+    white-space: pre-wrap;
+  }
+  
+  .preview {
+    background-color: #ffffff;
+    border: 1px solid #00b4d8;
+    border-radius: 5px;
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+  }
+  
+  .preview iframe {
+    flex-grow: 1;
+    border: none;
+  }
+  
+  .error {
+    color: #ff6b6b;
+    margin-bottom: 10px;
+  }
+  
+  /* Adjusting the Monaco Editor */
+  .monaco-editor {
+    flex-grow: 1;
+  }
+  
+  .quote-section {
+    width: 100%;
+    background-color: #2a2a2a;
+    border: 1px solid #00b4d8;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .quote-section button {
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .loading-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  .loading-progress {
+    width: 0;
+    height: 100%;
+    background-color: #00b4d8;
+    animation: loading 30s linear;
+  }
+  
+  @keyframes loading {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+  
+  .quote-response {
+    margin-top: 20px;
+  }
+  
+  .quote-response embed {
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
